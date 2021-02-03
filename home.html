@@ -225,7 +225,7 @@
             document.getElementById('time').innerHTML = 'Time: ' + days[d.getDay()] + ' ' + months[d.getMonth()] + ' ' + d.getDate() + ' ' + d.getFullYear() + ' ' + hours + ':' + minutes + ':' + seconds + ' ' + ampm;
         }
 
-        window.onload = function () { setInterval(update, 500); }
+        window.onload = function () { setInterval(update, 500); document.getElementById('search').focus(); }
 
 
     </script>
